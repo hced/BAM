@@ -1,9 +1,7 @@
 # **SPECIFICATION**
 
 
-## **BAM** – **B**lender **A**dd-on **M**anager
-
-Working draft v0.0.1 - 2021-03-29
+## ***B**lender **A**dd-on **M**anager*
 
 N.B: Words between **[ square brackets ]** are open for discussion; representable by multiple alternatives; not set in stone.
 
@@ -20,7 +18,7 @@ Official Blender add-on for maintaining installed add-ons.
 
 ### Architecture/Operation
 
-`BAM` should be included as a pre-installed add-on in official Blender builds. (Disabled by default.)
+`Blender Add-on Manager` (abbreviated `BAM`) should be included as a pre-installed add-on in official Blender builds. (Disabled by default.)
 
 It connects to a Git-versioned [ json ] file called `blender_addon_versions.json` on [ GitHub ] in order to compare installed versions with the latest available and update outdated add-ons.
 
@@ -48,10 +46,12 @@ Location (needs discussion):
 TODO:
 - Graphic prototype of UI elements and operational workflow. (Assignee: Henrik Cederblad.)
 
-### Future thoughts
+### Collected ideas from various people
 
 This list gathers a collection of possible future ideas.
 
 - Search for add-ons by feature/tag/name (requires additional key-vals to be added in `blender_addon_versions.json`).
 - Organization feature: Method to affect appearance of N-panel.
 - Report bugs: when add-ons break or crash Blender, maybe something of value could be sent to their developers, including application states and add-on log output?
+- Rating system (poses the question how to secure no one is tampering with ratings).
+- Install older versions (no info collected on the actual need for such feature).
